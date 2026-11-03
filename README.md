@@ -2,7 +2,8 @@
 
 Protótipo independente, mobile-first, com três direções visuais completas para a vitrine digital da Flexmobi. Use os botões no topo para alternar entre **Rota Viva**, **LAF Motion** e **Rio Elétrico**. A direção escolhida fica salva neste navegador.
 
-- Prancha de apresentação: [`prancha-flexmobi.svg`](prancha-flexmobi.svg)
+- Prancha de apresentação em imagem PNG: [`prancha-flexmobi.png`](prancha-flexmobi.png)
+- Fonte vetorial da prancha: [`prancha-flexmobi.svg`](prancha-flexmobi.svg)
 - Catálogo interativo com busca, filtros e favoritos locais
 - Fichas de referência por modelo
 - Atalhos de consulta pelo WhatsApp
