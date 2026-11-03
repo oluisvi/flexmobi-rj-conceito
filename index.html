@@ -12,7 +12,16 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="concept-note"><span>Estudo independente</span><span>·</span><span>Conteúdo demonstrativo</span></div>
+  <div class="concept-note">
+    <span class="concept-note-label"><span>Estudo independente</span><span>·</span><span>Conteúdo demonstrativo</span></span>
+    <div class="design-picker" role="group" aria-label="Escolha uma direção de design">
+      <span class="design-picker-title">3 DIREÇÕES PARA A FLEXMOBI</span>
+      <button class="design-option is-selected" type="button" data-design-choice="rota" aria-pressed="true"><span>01</span> Rota Viva</button>
+      <button class="design-option" type="button" data-design-choice="motion" aria-pressed="false"><span>02</span> LAF Motion</button>
+      <button class="design-option" type="button" data-design-choice="rio" aria-pressed="false"><span>03</span> Rio Elétrico</button>
+    </div>
+    <a class="design-board-link" href="prancha-flexmobi.svg" target="_blank" rel="noreferrer">Abrir prancha ↗</a>
+  </div>
   <header class="site-header">
     <a class="wordmark" href="#inicio" aria-label="Flexmobi, início"><span class="mark">f<span>✳</span></span><span>flexmobi<small>RIO DE JANEIRO</small></span></a>
     <nav class="desktop-nav" aria-label="Navegação principal">

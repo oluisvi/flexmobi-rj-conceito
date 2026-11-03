@@ -11,6 +11,9 @@ const products = [
 ];
 const $=(sel,root=document)=>root.querySelector(sel);const $$=(sel,root=document)=>[...root.querySelectorAll(sel)];
 const grid=$('#productGrid'),dialog=$('#productDialog'),dialogContent=$('#dialogContent'),toastNode=$('#toast');let activeFilter='all',searchText='',savedOnly=false,saved=new Set(readSaved());let toastTimer;
+const designChoices=[...$$('[data-design-choice]')];
+function setDesign(name,remember=true){if(!designChoices.some(button=>button.dataset.designChoice===name))name='rota';document.body.dataset.design=name;designChoices.forEach(button=>{const selected=button.dataset.designChoice===name;button.classList.toggle('is-selected',selected);button.setAttribute('aria-pressed',String(selected))});if(remember){try{localStorage.setItem('flexmobi-design',name)}catch{}}}
+const requestedDesign=new URLSearchParams(location.search).get('design');let savedDesign='rota';try{savedDesign=localStorage.getItem('flexmobi-design')||'rota'}catch{}setDesign(requestedDesign||savedDesign,false);designChoices.forEach(button=>button.addEventListener('click',()=>setDesign(button.dataset.designChoice)));
 function readSaved(){try{return JSON.parse(localStorage.getItem('flexmobi-saved')||'[]')}catch{return[]}}
 function writeSaved(){try{localStorage.setItem('flexmobi-saved',JSON.stringify([...saved]))}catch{}}
 function waUrl(text){return `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(text)}`}

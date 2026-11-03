@@ -1,10 +1,13 @@
-# Flexmobi — conceito de catálogo
+# Flexmobi — três conceitos de catálogo
 
-Protótipo independente para apresentar uma possível vitrine mobile-first da Flexmobi. Modelos e especificações são referências da linha LAF e não confirmam estoque, versão ou condição comercial da loja.
+Protótipo independente, mobile-first, com três direções visuais completas para a vitrine digital da Flexmobi. Use os botões no topo para alternar entre **Rota Viva**, **LAF Motion** e **Rio Elétrico**. A direção escolhida fica salva neste navegador.
 
-- Catálogo interativo com busca e filtros
+- Prancha de apresentação: [`prancha-flexmobi.svg`](prancha-flexmobi.svg)
+- Catálogo interativo com busca, filtros e favoritos locais
 - Fichas de referência por modelo
 - Atalhos de consulta pelo WhatsApp
 - Informações de test ride, manutenção, garantia e entrega com condições a confirmar
 
-Abra `index.html` localmente ou use a publicação do GitHub Pages após o deploy.
+Os produtos e especificações são referências da linha LAF; não confirmam estoque, versão ou condição comercial da Flexmobi. As imagens e marcas são usadas nesta demonstração e exigem aprovação para qualquer uso comercial ou publicação oficial.
+
+Abra [`index.html`](index.html) localmente ou acesse [a versão publicada](https://oluisvi.github.io/flexmobi-rj-conceito/).
