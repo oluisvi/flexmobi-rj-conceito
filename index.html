@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10130d">
+  <meta name="description" content="Um conceito de catálogo digital para a Flexmobi: explore bikes e scooters elétricas LAF e consulte modelos com a equipe.">
+  <title>Flexmobi — O caminho também faz parte</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="concept-note"><span>Estudo independente</span><span>·</span><span>Conteúdo demonstrativo</span></div>
+  <header class="site-header">
+    <a class="wordmark" href="#inicio" aria-label="Flexmobi, início"><span class="mark">f<span>✳</span></span><span>flexmobi<small>RIO DE JANEIRO</small></span></a>
+    <nav class="desktop-nav" aria-label="Navegação principal">
+      <a href="#catalogo">Modelos</a><a href="#experiencia">A experiência</a><a href="#apoio">Apoio Flexmobi</a>
+    </nav>
+    <a class="header-cta" href="#catalogo">Explorar catálogo <span>↗</span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Abrir menu"><span></span><span></span></button>
+  </header>
+  <nav id="mobile-nav" class="mobile-nav" aria-label="Navegação móvel" hidden>
+    <a href="#catalogo">Modelos</a><a href="#experiencia">A experiência</a><a href="#apoio">Apoio Flexmobi</a>
+  </nav>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero-image" role="img" aria-label="Bicicleta elétrica LAF em um caminho urbano ao entardecer"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><i></i> MOBILIDADE ELÉTRICA · RIO DE JANEIRO</p>
+        <h1>O carro te leva.<br><em>A bike te faz viver.</em></h1>
+        <p class="hero-intro">Um jeito novo de atravessar a cidade começa pela escolha certa. Descubra modelos, compare detalhes e converse com a Flexmobi.</p>
+        <div class="hero-actions"><a class="button button-lime" href="#catalogo">Encontrar meu caminho <span>↘</span></a><a class="text-link" href="#experiencia">Conheça a experiência <span>↓</span></a></div>
+      </div>
+      <div class="hero-bottom"><span>VIVA O PERCURSO</span><span>01 — 08 <b>●</b></span></div>
+      <div class="hero-card"><span class="hero-card-index">F / 01</span><span>Liberdade para<br>ir mais longe.</span><b>↗</b></div>
+    </section>
+
+    <section class="intro-strip" id="experiencia">
+      <div class="intro-kicker"><span>01</span><span>O CAMINHO É SEU</span></div>
+      <div class="intro-copy"><h2>Mais que chegar.<br><em>Sentir a cidade.</em></h2><div><p>A Flexmobi apresenta bikes elétricas como uma nova forma de viver o trajeto. Veja opções com calma, tire dúvidas com a equipe e descubra qual combina com a sua rotina.</p><a class="under-link" href="https://www.instagram.com/reel/DeSJLoGJpTG/" target="_blank" rel="noreferrer">Ver o vídeo que inspirou esta ideia <span>↗</span></a></div></div>
+      <div class="intro-stats"><div><strong>20</strong><small>modelos de scooter<br>na linha LAF*</small></div><div><strong>07</strong><small>modelos de bike<br>na linha LAF*</small></div><p>*Portfólio publicado pelo fabricante. Modelos, versões e disponibilidade na Flexmobi devem ser confirmados com a equipe.</p></div>
+    </section>
+
+    <section class="catalog-section" id="catalogo">
+      <div class="section-heading"><div><p class="eyebrow dark"><i></i> VITRINE FLEXMOBI / LAF</p><h2>Seu próximo<br><em>jeito de ir.</em></h2></div><p class="section-intro">Explore uma seleção de modelos da linha LAF para ajudar na comparação. O catálogo que a Fabiana enviou inspira esta proposta; confirme com a equipe quais modelos, versões e condições estão disponíveis na Flexmobi.</p></div>
+      <div class="catalog-controls">
+        <div class="filter-tabs" role="group" aria-label="Filtrar por categoria"><button class="filter active" data-filter="all" aria-pressed="true">Todos <span>08</span></button><button class="filter" data-filter="bike" aria-pressed="false">Bikes</button><button class="filter" data-filter="scooter" aria-pressed="false">Scooters</button></div>
+        <label class="search-field"><span aria-hidden="true">⌕</span><input type="search" id="search" placeholder="Buscar modelo" aria-label="Buscar modelo"><kbd>/</kbd></label>
+        <button class="saved-toggle" id="savedToggle" aria-pressed="false">♡ <span>Salvos</span><b id="savedCount">0</b></button>
+      </div>
+      <div class="catalog-meta"><span id="resultCount">08 MODELOS DE REFERÊNCIA</span><span>PREÇO E ESTOQUE SOB CONSULTA</span></div>
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      <p class="catalog-footnote"><span>i</span> Informações técnicas de referência da linha LAF e do catálogo compartilhado pela Flexmobi. Variações de versão, autonomia e componentes podem ocorrer. Confirme cada detalhe e a disponibilidade diretamente com a loja antes de decidir.</p>
+    </section>
+
+    <section class="ride-section">
+      <div class="ride-image" role="img" aria-label="Bicicleta elétrica LAF apresentada em cenário urbano"></div>
+      <div class="ride-content"><p class="eyebrow"><i></i> ANTES DE ESCOLHER</p><h2>O melhor modelo<br>é o que faz sentido<br><em>no seu trajeto.</em></h2><p>Distância, tipo de caminho e jeito de pedalar mudam o que vale a pena comparar. Converse com a equipe e pergunte sobre um test ride.</p><a class="button button-lime" href="#catalogo">Escolher um modelo <span>↗</span></a></div>
+      <span class="ride-index">FLEXMOBI / MOBILIDADE COM MAIS VIDA</span>
+    </section>
+
+    <section class="support-section" id="apoio">
+      <div class="support-heading"><div><p class="eyebrow dark"><i></i> ESTAMOS NO SEU CAMINHO</p><h2>Da primeira volta<br><em>ao pós-venda.</em></h2></div><p>Além de conhecer os modelos, você pode conversar com a Flexmobi sobre test ride, manutenção, garantia e entrega. As condições variam e devem ser confirmadas com a equipe.</p></div>
+      <div class="support-grid">
+        <article><span>01 / EXPERIMENTE</span><div class="support-icon">↗</div><h3>Test ride</h3><p>Converse com a loja para saber como testar os modelos e sentir a diferença no seu próprio ritmo.</p><a href="#contato">Perguntar à equipe <b>↗</b></a></article>
+        <article><span>02 / CUIDADO</span><div class="support-icon">✳</div><h3>Manutenção</h3><p>Conte com orientação sobre manutenção especializada e os cuidados indicados para sua bike.</p><a href="#contato">Tirar uma dúvida <b>↗</b></a></article>
+        <article><span>03 / CONFIANÇA</span><div class="support-icon">⌁</div><h3>Garantia</h3><p>Consulte a cobertura e os prazos aplicáveis ao modelo e à configuração escolhidos.</p><a href="#contato">Consultar condições <b>↗</b></a></article>
+        <article><span>04 / ALCANCE</span><div class="support-icon">→</div><h3>Entrega</h3><p>A Flexmobi informa envio nacional. Confirme cobertura, prazo e condições para seu endereço.</p><a href="#contato">Ver se atende minha região <b>↗</b></a></article>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <div><p class="eyebrow dark"><i></i> PERGUNTAS FREQUENTES</p><h2>Antes da<br><em>primeira volta.</em></h2></div>
+      <div class="faq-list">
+        <details><summary>Como saber qual modelo combina comigo?<span>+</span></summary><p>Comece pelo seu trajeto, distância e preferências. A equipe pode orientar a comparação; autonomia e desempenho variam conforme modelo e condições de uso.</p></details>
+        <details><summary>Posso fazer um test ride?<span>+</span></summary><p>A Flexmobi divulga test ride. Consulte a equipe para verificar modelos participantes, local, horários e disponibilidade.</p></details>
+        <details><summary>Qual é o preço e tem pronta entrega?<span>+</span></summary><p>Os valores e o estoque não estão publicados neste conceito. Chame a Flexmobi para confirmar preço, versão, cores e disponibilidade atual.</p></details>
+        <details><summary>Como funcionam garantia e manutenção?<span>+</span></summary><p>A Flexmobi divulga garantia e manutenção especializada. Peça à equipe as condições por modelo e os detalhes do atendimento pós-venda.</p></details>
+      </div>
+    </section>
+
+    <section class="closing" id="contato"><div class="closing-text"><p class="eyebrow"><i></i> A CIDADE ESPERA</p><h2>Vamos encontrar<br>seu <em>próximo caminho?</em></h2><p>Fale com a Flexmobi para conferir um modelo, saber sobre test ride ou tirar dúvidas sobre sua rotina.</p><a class="button button-lime" id="closingWhatsapp" href="#">Conversar com a Flexmobi <span>↗</span></a></div><div class="closing-art"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><span class="closing-mark">f✳</span><span class="closing-caption">FLEXMOBI<br>RIO DE JANEIRO</span></div></section>
+  </main>
+  <footer class="site-footer"><a class="wordmark" href="#inicio"><span class="mark">f<span>✳</span></span><span>flexmobi<small>RIO DE JANEIRO</small></span></a><p>Mobilidade para viver o caminho.</p><div><a href="https://www.instagram.com/flexmobi.rj/" target="_blank" rel="noreferrer">Instagram ↗</a><a id="footerWhatsapp" href="#">WhatsApp ↗</a></div><small class="footer-note">Conceito independente para avaliação. Não é um site oficial da Flexmobi. Imagens e especificações de referência LAF; uso e publicação sujeitos à aprovação da loja e do fabricante. Estoque e condições a confirmar.</small><span class="copyright">© 2026 FLEXMOBI · DEMONSTRAÇÃO CONCEITUAL</span></footer>
+  <a class="mobile-contact" id="mobileWhatsapp" href="#"><span>Falar com a Flexmobi</span><b>↗</b></a>
+  <dialog id="productDialog" class="product-dialog" aria-labelledby="dialogTitle"><button class="dialog-close" aria-label="Fechar">×</button><div id="dialogContent"></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js" defer></script>
+</body>
+</html>
